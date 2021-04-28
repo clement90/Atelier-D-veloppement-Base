@@ -1,0 +1,278 @@
+/*Normalise CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Mise en forme générale*/
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header*/
+
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+header h1>a,
+header>nav>ul>li>a {
+    padding: 1.7rem;
+    color: white;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.active,
+header>nav>ul>li>a:hover {
+    background-color: #444;
+}
+
+
+/*HERO*/
+
+.hero {
+    height: 43rem;
+    background: url("img/frame.jpg") center center;
+    background-size: cover;
+    padding-top: 9rem;
+}
+
+.hero>div {
+    max-width: 37rem;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.hero>div>p {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero>div>div {
+    background: black;
+    width: 6.25rem;
+    height: 10px;
+    margin: 1.5rem auto;
+}
+
+.hero>div>a {
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+
+/*Section 2*/
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.container>div {
+    width: 45%;
+    padding: 4rem;
+}
+
+.container>div>h3 {
+    margin: 0.8rem 0;
+}
+
+.container>div>p {
+    letter-spacing: 0.5px;
+}
+
+
+/*Simulation bouton*/
+
+.btn {
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.btn-noir:hover,
+.btn-primaire {
+    background: #222;
+    color: white;
+}
+
+.btn-noir,
+.btn-primaire:hover {
+    background: white;
+    color: #222;
+    border: 1px solid #222;
+}
+
+.image {
+    height: 25rem;
+    background: url("img/person-1.jpg") center center/cover;
+}
+
+
+/* Reservation */
+
+.reservation {
+    padding: 6.5rem 0;
+    text-align: center;
+}
+
+.reservation>div {
+    width: 60%;
+    margin: auto;
+}
+
+.reservation>div>h3 {
+    font-size: 1.5rem;
+}
+
+.reservation>div>p {
+    margin: 1.3rem 0;
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+/*Plan*/
+
+.plan {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    letter-spacing: 0.5x;
+    height: 50rem;
+}
+
+.plan>div {
+    padding: 2rem;
+}
+
+.plan>img {
+    width: 50%;
+}
+
+.metro {
+    font-weight: 700;
+    margin: 1.2em 0;
+}
+
+.plan h3 {
+    margin-bottom: 1.2em;
+}
+
+
+/*Ligne de metro*/
+
+.rond {
+    border-radius: 50%;
+    color: white;
+}
+
+.rose {
+    background-color: rgb(231, 44, 231);
+}
+
+.brun {
+    background-color: maroon;
+}
+
+
+/*Formulaire de contact*/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 4em auto;
+    letter-spacing: 0.5px;
+}
+
+.contact>hr {
+    width: 100%;
+    margin: 1.2em 0 0 0;
+}
+
+.contact>form {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2em;
+}
+
+.contact>form>label {
+    font-weight: 700;
+    margin: 1.2em 0;
+}
+
+.contact>form>input[type=text] {
+    height: 4em;
+    border: 1px solid rgba(128, 128, 128, 0.164);
+    border-radius: 5px;
+}
+
+.contact>form>textarea {
+    border: 1px solid rgba(128, 128, 128, 0.164);
+    border-radius: 5px;
+}
+
+
+/*Bouton Soumettre*/
+
+.contact>form>input[type=submit] {
+    margin: 1.2em 0;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+    width: 160px;
+    height: 60px;
+    font-weight: 700;
+    border: 0px;
+}
+
+.contact>form>input[type=submit]:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}

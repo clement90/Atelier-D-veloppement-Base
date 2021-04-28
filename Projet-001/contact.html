@@ -7,36 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Café Florette</h1>
+        <h1>
+            <a href="index.html">Café Florette</a></h1>
         <nav>
             <ul>
                 <li>
-                    <a href="">Accueil</a>
+                    <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="">Nous Trouver</a>
+                    <a href="plan.html">Nous Trouver</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="contact.html" class="active">Contact</a>
                 </li>
 
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Une question ? Contactez nous</h2>
+    <section class="contact">
+        <h3>Une question ? Contactez nous</h3>
         <hr>
         <form action="" method="post">
             <label for="Nom">Nom</label><input type="text" id="Nom">
             <label for="Email">Email</label><input type="text" id="Email">
-            <label for="Questions">Questions et remarques</label><input type="text" id="Questions">
+            <label for="Questions">Questions et remarques</label><textarea name="Question" id="Question" cols="30" rows="7"></textarea>
+            <input type="submit" value="SOUMETTRE">
         </form>
-        <button>SOUMETTRE</button>
-
     </section>
 </body>
 

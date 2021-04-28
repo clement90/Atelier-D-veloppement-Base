@@ -7,62 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Florette</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Café Florette</h1>
+        <h1>
+            <a href="index.html">Café Florette</a></h1>
         <nav>
             <ul>
                 <li>
-                    <a href="">Accueil</a>
+                    <a href=" index.html " class="active">Accueil</a>
                 </li>
                 <li>
-                    <a href="">Nous Trouver</a>
+                    <a href="plan.html ">Nous Trouver</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
 
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="hero">
         <div>
             <h2>Tout l'expertise française dans un café</h2>
             <div></div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam praesentium voluptates repudiandae sint nobis itaque eos labore libero dicta dolorum tempora esse nihil, provident consequatur, voluptatum ex modi sequi fugit.
             </p>
-            <button>DECOUVRIR</button>
-            <!--<input type="button" value="DECOUVRIR">>-->
+            <a class="btn-noir btn" href="plan.html">DECOUVRIR</a>
+            <!--<input type="button " value="DECOUVRIR ">>-->
         </div>
     </section>
-    <section>
-        <div>
-            <div>
-                <i>
+    <section class="container">
 
-                </i>
-                <h3>Un nouveau café par jour</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam sapiente perspiciatis distinctio voluptatibus odio dolore, illo aperiam ea amet quaerat porro ratione itaque provident quibusdam. Veritatis, alias dolorem. Aliquam.</p>
-            </div>
-            <div>
-                <i></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed laudantium numquam consectetur veritatis nam labore accusamus quasi facilis eligendi eveniet aliquam odit id non repellendus, reiciendis esse. Minima, labore?</p>
-            </div>
-        </div>
-    </section>
-    <section>
         <div>
+            <i class="fas fa-coffee fa-3x my-10 "></i>
+            <h3>Un nouveau café par jour</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam sapiente perspiciatis distinctio voluptatibus odio dolore, illo aperiam ea amet quaerat porro ratione itaque provident quibusdam. Veritatis, alias dolorem. Aliquam.</p>
         </div>
+        <div>
+            <i class="fas fa-clock fa-3x my-10 "></i>
+            <h3>Ouvert 24/24 7j/7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed laudantium numquam consectetur veritatis nam labore accusamus quasi facilis eligendi eveniet aliquam odit id non repellendus, reiciendis esse. Minima, labore?</p>
+        </div>
+
     </section>
     <section>
+        <div class="image">
+        </div>
+    </section>
+    <section class="reservation">
         <div>
             <h3>Reservez dès maintenant</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos unde repellat illo eligendi, in, incidunt ut aperiam delectus, quaerat error architecto eos atque. Laboriosam suscipit, facilis minus voluptas totam molestias!</p>
-            <button>RESERVEZ</button>
-            <!--<input type="button" value="RESERVEZ">-->
+            <a class="btn btn-primaire" href="contact.html">RESERVEZ</a>
+            <!--<input type="button " value="RESERVEZ ">-->
         </div>
     </section>
     <footer>

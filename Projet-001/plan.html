@@ -7,35 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Florette</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Café Florette</h1>
+        <h1>
+            <a href="index.html">Café Florette</a></h1>
         <nav>
             <ul>
                 <li>
-                    <a href="">Accueil</a>
+                    <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="">Nous trouver</a>
+                    <a href="plan.html" class="active">Nous Trouver</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
-        <img src="img/map.png" alt="Map">
-    </section>
-    <section>
-        <h2>Ou nous trouver</h2>
-        <hr>
-        <h3>Métro : Ligne<i></i> - Odéon, ligne <i></i> - Mabillion</h3>
-        <p>Adresse : 131 Boulevard Saint-Germain, 75006 Paris</p>
-    </section>
+    <section class="plan">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.275976215612!2d2.3338425158691765!3d48.852947609043646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d90bdccb61%3A0x42c132f40c86ac1!2s131%20Boulevard%20Saint-Germain%2C%2075006%20Paris%2C%20France!5e0!3m2!1sfr!2sbe!4v1619552157863!5m2!1sfr!2sbe"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 
+        <div>
+            <h3>Ou nous trouver</h3>
+            <hr>
+            <p class="metro">Métro : Ligne <span class="rond rose">&ensp;4&ensp;</span> - Odéon, ligne <span class="rond brun">&ensp;11&ensp;</span> - Mabillion</p>
+            <p>Adresse : 131 Boulevard Saint-Germain, 75006 Paris</p>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy; - Florette - 2019
+    </footer>
 </body>
 
 </html>
