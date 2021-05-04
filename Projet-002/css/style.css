@@ -1,0 +1,231 @@
+        /*Normalise CSS*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*Mise en forme générale*/
+        
+        html,
+        body {
+            font-family: "Montserrat", sans-serif;
+            color: rgb(200, 200, 200);
+            background-color: #eee;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        /*Header*/
+        
+        header {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /*Titre*/
+        
+        h1 {
+            font-family: "Long Cang", cursive;
+            color: white;
+            padding: 0.5em;
+        }
+        
+        h1>i,
+        span {
+            color: #f1c40f;
+        }
+        /*Menu*/
+        
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+        
+        header>nav>ul>li>a {
+            color: rgb(200, 200, 200);
+            padding: 1.7rem;
+        }
+        /*hero*/
+        
+        .hero {
+            display: flex;
+            height: 36rem;
+            background: url(../images/frame.jpg) center center;
+            background-size: cover;
+            /*padding-top: 10rem;*/
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            color: white;
+            margin: 1rem;
+        }
+        
+        .hero>div {
+            width: 30%;
+            margin: auto;
+        }
+        /*Offre*/
+        
+        .offre,
+        .avis {
+            width: 80%;
+            height: 36em;
+            margin: auto;
+        }
+        
+        .offre>div {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        
+        .offre h4,
+        .avis h4 {
+            margin-top: 4em;
+            font-size: 1.6em;
+        }
+        
+        .offre img {
+            width: 18.5em;
+            margin-bottom: 1rem;
+        }
+        
+        .vignette {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .vignette p {
+            margin: 0.4rem;
+        }
+        
+        .vignette p:last-child {
+            margin-bottom: 2rem;
+        }
+        
+        .noir {
+            background: black;
+            width: 3rem;
+            height: 2px;
+            margin: 0.2rem auto;
+        }
+        /*Equipe*/
+        
+        #equipe {
+            display: flex;
+        }
+        
+        #equipe div {
+            width: 50%;
+            height: 36rem;
+        }
+        
+        #equipe div:first-child {
+            background: url(../images/team.jpg)center center;
+            background-size: cover;
+        }
+        
+        #equipe div:last-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #333;
+        }
+        
+        #equipe p {
+            margin: 2em;
+        }
+        
+        #equipe h3 {
+            margin-left: 2em;
+        }
+        /*Avis*/
+        
+        .cont {
+            margin: 1em 0;
+            display: flex;
+            padding: 1em;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .w80 {
+            width: 90%;
+            padding: 0 2em;
+        }
+        
+        .w20 {
+            width: 10%;
+        }
+        
+        .w20 img {
+            width: 40px;
+            border-radius: 50%;
+        }
+        
+        .reverse {
+            flex-direction: row-reverse;
+        }
+        /*Formulaire*/
+        
+        #formulaire {
+            display: flex;
+            flex-direction: column;
+            height: 36em;
+            background-color: #333;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cont2 {
+            width: 50%;
+        }
+        
+        #formulaire form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #formulaire form input,
+        #formulaire form textarea {
+            width: 100%;
+            background-color: #333;
+            border: none;
+            border-bottom: 1px solid rgb(200, 200, 200);
+            padding: 1em;
+        }
+        
+        #formulaire form input[type=submit] {
+            margin: 1.2em 0;
+            border-radius: 40px;
+            color: white;
+            background-color: #f1c40f;
+            width: 160px;
+            height: 60px;
+            font-weight: 700;
+            border: 0px;
+            margin: 4em auto;
+        }
+        
+        #formulaire form input[type=submit]:hover {
+            color: white;
+            background-color: #333;
+            border: 1px solid #f1c40f;
+        }
+        /*footer*/
+        
+        footer {
+            background-color: #444;
+            text-align: center;
+            padding: 2em;
+        }
