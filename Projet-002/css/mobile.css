@@ -1,0 +1,40 @@
+header {
+    flex-direction: column;
+}
+
+header>nav>ul {
+    flex-direction: column;
+}
+
+header>nav>ul>li {
+    padding: 1rem;
+    border-bottom: 1px solid;
+}
+
+header>nav {
+    margin-bottom: 1em;
+}
+
+.vignette img {
+    max-width: 18.5em;
+}
+
+#offre>div {
+    flex-flow: column wrap;
+    justify-content: center !important;
+}
+
+#equipe {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#equipe div {
+    display: flex;
+    flex-flow: column;
+    width: 100% !important;
+}
+
+.hero>div {
+    width: 100% !important;
+}

@@ -1,0 +1,14 @@
+.vignette img {
+    max-width: 15em;
+}
+
+.cont,
+.reverse {
+    flex-direction: column !important;
+    padding: 2em;
+}
+
+.profil,
+.comment {
+    width: 100%;
+}
