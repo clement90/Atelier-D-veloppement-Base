@@ -21,20 +21,20 @@ header>nav {
 
 #offre>div {
     flex-flow: column wrap;
-    justify-content: center !important;
+    justify-content: center;
 }
 
 #equipe {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column-reverse wrap;
 }
 
 #equipe div {
     display: flex;
     flex-flow: column;
-    width: 100% !important;
+    width: 100%;
 }
 
 .hero>div {
-    width: 100% !important;
+    width: 100%;
 }
