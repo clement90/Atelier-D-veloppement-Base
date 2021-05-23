@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid ">
@@ -44,27 +45,54 @@
             </div>
         </nav>
     </header>
+
+    <?php
+    function getArrayValue(array $array, string $value)
+    {
+    if (isset($array[$value]))
+        return htmlspecialchars ($array[$value]) ;
+    return "";
+    }
+    //check civilité
+    $civilite["monsieur"] = getArrayValue($_POST, "civilite") == "monsieur"? "checked": "";
+    $civilite["madame"] =getArrayValue($_POST, "civilite")== "madame"? "checked": "";
+    //check nom prénom
+    $nom = getArrayValue($_POST, "Nom");
+    $prenom = getArrayValue($_POST, "Prenom");
+    //check mail
+    $mail = getArrayValue($_POST, "Mail");
+    $mail = filter_var($mail, FILTER_VALIDATE_EMAIL);
+    //check question
+    $question["question"]= getArrayValue($_POST, "question")=="question"? "selected": "";
+    $question["entretien"]= getArrayValue($_POST, "question")=="entretien"? "selected": "";
+    $question["service"]= getArrayValue($_POST, "question")=="service"? "selected": "";
+    $question["autre"]= getArrayValue($_POST, "question")=="autre"? "selected": "";
+    //check message 
+    $message = getArrayValue($_POST, "message");
+    ?>
+
+
     <section class="formulaire container min-vh-100">
         <h2 class=" mt-5 mb-4">Nous joindre</h2>
         <div>
-            <form action="" method="post">
-                <input class="form-check-input m-3" type="radio" name="civilite" id="civilite">
+            <form action="contact.php" method="post">
+                <input class="form-check-input m-3" type="radio" name="civilite" id="civilite" value="monsieur" <?php echo $civilite["monsieur"];?>>
                 <label class="form-check-label mt-2" for="monsieur">
                 Monsieur
                 </label>
-                <input class="form-check-input m-3" type="radio" name="civilite" id="civilite">
+                <input class="form-check-input m-3" type="radio" name="civilite" id="civilite" value="madame" <?php echo $civilite["madame"]; ?>>
                 <label class="form-check-label mt-2" for="madame">
                 Madame
                 </label>
-                <input class="form-control m-3" id="Nom" type="text" placeholder="Nom" aria-label="Nom">
-                <input class="form-control m-3" id="Prenom" type="text" placeholder="Prenom" aria-label="Prenom">
-                <input class="form-control m-3" id="Mail" type="text" placeholder="Mail" aria-label="Mail">
-                <select class="form-select m-3" aria-label="Choix de demande">
-                    <option selected>Question</option>
-                    <option value="1">Entretien</option>
-                    <option value="2">Service après-vente</option>
-                    <option value="3">Autre</option>
-                    <textarea class="form-control m-3" id="exampleFormControlTextarea1" rows="3" placeholder="Votre message"></textarea>
+                <input class="form-control m-3" id="Nom" type="text" placeholder="Nom" aria-label="Nom" value="<?php echo $nom ?>" name="Nom">
+                <input class="form-control m-3" id="Prenom" type="text" placeholder="Prenom" aria-label="Prenom" value="<?php echo $prenom ?>" name="Prenom">
+                <input class="form-control m-3" id="Mail" type="text" placeholder="Mail" aria-label="Mail" name="Mail" value="<?php echo $mail ?>">
+                <select class="form-select m-3" aria-label="Choix de demande" name="question">
+                    <option value="question" <?php echo $question["question"]; ?>>Question</option>
+                    <option value="entretien" <?php echo $question["entretien"]; ?>>Entretien</option>
+                    <option value="service" <?php echo $question["service"]; ?>>Service après-vente</option>
+                    <option value="autre" <?php echo $question["autre"]; ?>>Autre</option>
+                    <textarea class="form-control m-3" id="message" rows="3" placeholder="Votre message" name="message"><?php echo $message ?></textarea>
                   </select>
                 <div class="col-12 m-3">
                     <button class="btn btn-primary" type="submit">Envoyer votre demande</button>
